@@ -1,0 +1,23 @@
+/*#######################
+## Media query responsive
+##########################*/
+$mobile: 768px;
+$smallMobile: 480px;
+
+@mixin respond-to( $media ) {
+	@if $media == mobile {
+  	@media only screen and (max-width: $mobile) {
+  		@content;
+  	}
+  }
+  @else if $media == gtMobile {
+  	@media only screen and (min-width: $mobile) {
+  		@content;
+  	}
+  }
+  @else if $media == smallMobile {
+  	@media only screen and (max-width: $smallMobile) {
+  		@content
+  	}
+	}
+}

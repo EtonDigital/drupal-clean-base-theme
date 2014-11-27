@@ -1,0 +1,12 @@
+/*###############################
+## Helper for hide text into file
+##################################*/
+
+%hide {
+	display: block;
+  overflow: hidden;
+  text-align: left;
+	text-indent: -9999em;
+  text-transform: uppercase;
+}
+

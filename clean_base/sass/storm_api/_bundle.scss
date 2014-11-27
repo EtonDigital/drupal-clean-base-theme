@@ -1,0 +1,20 @@
+/*#############################
+## core bundler for call models
+################################*/
+
+/*#############
+## Core modules
+################*/
+@import "require";
+@import "core/api_reset/bundle_api_reset";
+@import "core/minimal/bundle_minimal";
+
+/*###############
+## Custom modules
+##################*/
+@import "default_themes/bundle_default_themes";
+
+/*
+| Media query
+*/
+@import "media/media_bundle";
