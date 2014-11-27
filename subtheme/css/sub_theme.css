@@ -7,15 +7,14 @@ _____________________________________
 | Storm is bundle of base style file for frontend
 | with defined standard
 ================================== */
-
 /*
 | Require
 | include require variable, mixin , extends
 */
-@import "require/require_bundle";
-
-/* core theme */
-@import "theme_core/core_bundle";
-
+/*##################################################################
+## Require file is config file for include all require item and file
+#####################################################################*/
 /* bundler theme*/
-@import "theme_scss/theme_bundle";
+/*#############################
+## theme bundle
+################################*/
