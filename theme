@@ -1,0 +1,4 @@
+#!/bin/bash
+
+compass compile clean_base/ $*;
+compass compile subtheme/ $*;
