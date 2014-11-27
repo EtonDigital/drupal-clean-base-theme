@@ -1,2 +1,2 @@
-clean_base
+Clean base theme For Drupal 7
 ==========
