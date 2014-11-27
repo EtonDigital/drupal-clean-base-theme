@@ -17,7 +17,9 @@ regions[footer] = Footer
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
-stylesheets[all][] = css/screen.css
+;stylesheets[all][] = css/screen.css
+stylesheets[all][] = css/theme.css
+
 
 ; ;;;;;;;;;;;;;;;;;;;;;
 ; ;; Scripts

@@ -5,15 +5,10 @@
 // Require compass library
 @import "compass/css3";
 
+// import variable
+@import "vars/vars_bundle";
 
-// Variables
-@import "require/vars/bundle_vars";
 
-// Mixin include
-@import "require/mixin/bundle_mixin";
+@import "mixin/mixin_bundle";
 
-// Extend
-@import "extend/bundle_extend";
-
-// Sprite
-@import "../sprites/bundle_sprite";
+@import "extend/extend_bundle";
