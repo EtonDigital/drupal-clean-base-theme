@@ -1,0 +1,68 @@
+@import "compass/utilities/sprites/base";
+
+// General Sprite Defaults
+// You can override them before you import this file.
+$icons-sprite-base-class: ".icons-sprite" !default;
+$icons-sprite-dimensions: false !default;
+$icons-position: 0% !default;
+$icons-spacing: 0 !default;
+$icons-repeat: no-repeat !default;
+$icons-prefix: '' !default;
+$icons-clean-up: true !default;
+$icons-layout:vertical !default;
+$icons-inline: false !default;
+
+ 
+  $icons-sprites: sprite-map("icons/*.png", $layout: $icons-layout, $cleanup: $icons-clean-up , $spacing: $icons-spacing);
+
+
+// All sprites should extend this class
+// The icons-sprite mixin will do so for you.
+@if $icons-inline {
+  #{$icons-sprite-base-class} {
+    background-image: inline-sprite($icons-sprites);
+  } 
+} @else {
+  #{$icons-sprite-base-class} {
+    background: $icons-sprites no-repeat;
+  }
+}
+//sass functions to return the dimensions of a sprite image as units
+
+  @function icons-sprite-width($name) {
+    $file: sprite_file($icons-sprites, $name);
+    @return image-width($file);
+  }
+
+  @function icons-sprite-height($name) {
+    $file: sprite_file($icons-sprites, $name);
+    @return image-height($file);
+  }
+
+
+// Use this to set the dimensions of an element
+// based on the size of the original image.
+@mixin icons-sprite-dimensions($name) {
+  @include sprite-dimensions($icons-sprites, $name)
+}
+
+// Move the background position to display the sprite.
+@mixin icons-sprite-position($name, $offset-x: 0, $offset-y: 0) {
+  @include sprite-background-position($icons-sprites, $name, $offset-x, $offset-y)
+}
+
+// Extends the sprite base class and set the background position for the desired sprite.
+// It will also apply the image dimensions if $dimensions is true.
+@mixin icons-sprite($name, $dimensions: $icons-sprite-dimensions, $offset-x: 0, $offset-y: 0) {
+  @extend #{$icons-sprite-base-class};
+  @include sprite($icons-sprites, $name, $dimensions, $offset-x, $offset-y)
+}
+
+@mixin icons-sprites($sprite-names, $dimensions: $icons-sprite-dimensions, $prefix: sprite-map-name($icons-sprites), $offset-x: 0, $offset-y: 0) {
+  @include sprites($icons-sprites, $sprite-names, $icons-sprite-base-class, $dimensions, $prefix, $offset-x, $offset-y)
+}
+
+// Generates a class for each sprited image.
+@mixin all-icons-sprites($dimensions: $icons-sprite-dimensions, $prefix: sprite-map-name($icons-sprites), $offset-x: 0, $offset-y: 0) {
+  @include icons-sprites(fb_share, $dimensions, $prefix, $offset-x, $offset-y);
+}
