@@ -1,0 +1,4 @@
+name = Subtheme example
+description = This is a sub-theme of theme Clean base.
+core = 7.x
+base theme = clean_base
