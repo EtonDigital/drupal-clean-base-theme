@@ -7,4 +7,4 @@ base theme = clean_base
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
-stylesheets[all][] = css/subtheme.css
+stylesheets[all][] = css/theme.css
