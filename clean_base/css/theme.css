@@ -350,18 +350,26 @@ form .form-item.block-inner input {
 ## theme bundle
 ################################*/
 /* Layout */
-/* line 3, ../sass/theme_scss/_layout.scss */
+/* Footer on bottom */
+/* line 4, ../sass/theme_scss/_layout.scss */
 .page-main {
   min-height: 100%;
 }
 
-/* line 7, ../sass/theme_scss/_layout.scss */
+/* line 8, ../sass/theme_scss/_layout.scss */
 #page-wrapper {
   padding-bottom: 30px;
 }
 
-/* line 11, ../sass/theme_scss/_layout.scss */
+/* line 12, ../sass/theme_scss/_layout.scss */
 #page-footer {
   clear: both;
   margin-top: -20px;
+}
+
+/* page holder */
+/* line 18, ../sass/theme_scss/_layout.scss */
+.page-holder {
+  max-width: 1024px;
+  width: 100%;
 }
