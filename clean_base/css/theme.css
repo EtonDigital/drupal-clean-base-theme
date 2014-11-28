@@ -287,7 +287,7 @@ table tr:hover td {
 
 /* line 2, ../sass/core/minimal/_forms.scss */
 form {
-  border: "1px solid #999999;";
+  border: "1px solid #999999";
   padding: "10px";
   -webkit-border-radius: "5px";
   -moz-border-radius: "5px";
@@ -349,3 +349,19 @@ form .form-item.block-inner input {
 /*#############################
 ## theme bundle
 ################################*/
+/* Layout */
+/* line 3, ../sass/theme_scss/_layout.scss */
+.page-main {
+  min-height: 100%;
+}
+
+/* line 7, ../sass/theme_scss/_layout.scss */
+#page-wrapper {
+  padding-bottom: 30px;
+}
+
+/* line 11, ../sass/theme_scss/_layout.scss */
+#page-footer {
+  clear: both;
+  margin-top: -20px;
+}

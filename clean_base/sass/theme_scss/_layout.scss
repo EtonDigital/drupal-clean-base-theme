@@ -1,0 +1,14 @@
+/* Layout */
+
+.page-main {
+  min-height: 100%;
+}
+
+#page-wrapper {
+  padding-bottom: $footer-height + $footer-margin;
+}
+
+#page-footer {
+  clear: both;
+  margin-top: - $footer-height;
+}

@@ -1,36 +1,36 @@
 /*
 | Layout
 */
-$minimal_pageHolderWidth: 1024px;
+$minimal_pageHolderWidth: 1024px !default;
 
 /*
 | Forms
 */
-$minimal_formBorder: "1px solid #999999;";
-$minimal_formPadding: "10px";
-$minimal_formRadius: "5px";
-$minimal_formBackground: "linear-gradient( top, #F4F4F4, #fff)";
+$minimal_formBorder: "1px solid #999999" !default;
+$minimal_formPadding: "10px" !default;
+$minimal_formRadius: "5px" !default;
+$minimal_formBackground: "linear-gradient( top, #F4F4F4, #fff)" !default;
 
 //legend
-$minimal_legendSize: "16px";
-$minimal_legendFontWeight: "normal";
-$minimal_legendBorder: "1px solid #505245";
-$minimal_legendBC: "#fff";
-$minimal_legendRadius: "3px";
-$minimal_legendShadow: "0px 0px 3px 1px rgba(0, 0, 0, 0.2)";
+$minimal_legendSize: "16px" !default;
+$minimal_legendFontWeight: "normal" !default;
+$minimal_legendBorder: "1px solid #505245" !default;
+$minimal_legendBC: "#fff" !default;
+$minimal_legendRadius: "3px" !default;
+$minimal_legendShadow: "0px 0px 3px 1px rgba(0, 0, 0, 0.2)" !default;
 
 // Description
-$minimal_descFontiSize: "12px";
-$minimal_descFontWeight: "normal";
-$minimal_descFontStyle: "italic";
-$minimal_descMargin: "15px 0";
-$minimal_descBorder: "1px solid #E9E9E9";
-$minimal_descBC: "#EBEBEB";
-$minimal_descPadding: "5px";
-$minimal_descColor: "#494949";
+$minimal_descFontiSize: "12px" !default;
+$minimal_descFontWeight: "normal" !default;
+$minimal_descFontStyle: "italic" !default;
+$minimal_descMargin: "15px 0" !default;
+$minimal_descBorder: "1px solid #E9E9E9" !default;
+$minimal_descBC: "#EBEBEB" !default;
+$minimal_descPadding: "5px" !default;
+$minimal_descColor: "#494949" !default;
 
 // Input and select
-$minimal_formItemsBorder: "1px solid #BCBCBC";
+$minimal_formItemsBorder: "1px solid #BCBCBC" !default;
 
 // Label
-$minimal_labelFontSize: 14px;
+$minimal_labelFontSize: 14px !default;

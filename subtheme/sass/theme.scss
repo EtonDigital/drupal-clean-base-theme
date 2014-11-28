@@ -12,16 +12,25 @@ _____________________________________
 ================================== */
 
 /*
-| Call required form base theme
-*/
+| Call required form base theme */
 @import "../../clean_base/sass/require/require_bundle";
-
 
 /*
 | Require
-| include require variable, mixin , extends
-*/
+| include require variable, mixin , extends */
 @import "require/require_bundle";
 
-/* bundler theme*/
+/* import sprites */
+//@import "../../clean_base/sass/sprites/sprite_bundle";
+@import "sprites/sprite_bundle";
+
+/* import core theme from prev theme */
+@import "../../clean_base/sass/core/core_bundle";
+
+/*
+| import theme from core theme
+| you can read guideline about making custom theme bundle for subtheme */
+@import "../../clean_base/sass/theme_scss/theme_bundle";
+
+/* bundler theme */
 @import "theme_scss/theme_bundle";
