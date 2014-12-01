@@ -92,7 +92,7 @@
           <?php print render($page['sidebar_second']); ?>
         </section>
       <?php endif; ?>
-      
+
     </div> <!-- page-holder-->
   </section> <!-- page-wrapper -->
 

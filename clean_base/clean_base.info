@@ -25,5 +25,5 @@ stylesheets[all][] = css/theme.css
 ; ;; Scripts
 ; ;;;;;;;;;;;;;;;;;;;;;
 
-scripts[] = 'javascript/app.js'
+scripts[] = 'assets/main.js'
 

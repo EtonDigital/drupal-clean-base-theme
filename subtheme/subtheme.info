@@ -8,3 +8,9 @@ base theme = clean_base
 ;;;;;;;;;;;;;;;;;;;;;
 
 stylesheets[all][] = css/theme.css
+
+; ;;;;;;;;;;;;;;;;;;;;;
+; ;; Scripts
+; ;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = 'assets/app.js'
