@@ -7,7 +7,7 @@
   // message close init btn
 	$.messsageClose = function( element , options ) {
 
-		element.data('messsageClose' , this).addClass('messsageClose');
+		element.data('messsageClose' , this).addClass('messsageclose');
 	  var settings = {},
       closeBtn,
       obj = this;
@@ -21,7 +21,7 @@
 	  };
 
     this.getSettings = function( el ) {
-      settings = el.closest('.messsageClose' , element).data('settings_messsageClose');
+      settings = el.closest('.messsageclose' , element).data('settings_messsageClose');
     };
 
     this._addBtnClose = function() {

@@ -11,7 +11,6 @@
 
        $('.messages', context).messsageClose();
 
-
      }
    };
 
