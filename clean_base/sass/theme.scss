@@ -22,3 +22,9 @@ _____________________________________
 
 /* bundler theme*/
 @import "theme_scss/theme_bundle";
+
+
+/*
+| Overide for overide all element
+| Must be a last css loaded fiel */
+//@import "overide/overide_bundle";

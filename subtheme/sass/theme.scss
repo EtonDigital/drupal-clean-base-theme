@@ -38,4 +38,7 @@ _____________________________________
 /*
 | Overide for overide all element
 | Must be a last css loaded fiel */
-//@import "overide/overide_bundle";
+/* Overide from core theme */
+  //@import "../../clean_base/sass/overide/overide_bundle";
+/* Overide from sub theme */
+  //@import "overide/overide_bundle";
