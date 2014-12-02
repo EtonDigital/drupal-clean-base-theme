@@ -9,6 +9,15 @@ echo ...
 echo ...
   echo " Themes compiled..."
 ;;
+
+'help' )
+  echo -e
+  echo "Usage: theme"
+  echo "  all [param]           => compile all project run "
+  echo "  [theme_name] [param]  => for individual compile run"
+  echo ...
+;;
+
 *)
   compass compile $*
   echo $1 "Has compiled"
