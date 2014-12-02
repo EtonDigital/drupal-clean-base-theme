@@ -1,4 +1,18 @@
 #!/bin/bash
 
-compass compile clean_base/ $*;
-compass compile subtheme/ $*;
+case "$1" in
+'all' )
+echo ...
+  compass compile clean_base/ ${@:2};
+echo ...
+  compass compile subtheme/ ${@:2};
+echo ...
+  echo " Themes compiled..."
+;;
+*)
+  compass compile $*
+  echo $1 "Has compiled"
+esac
+
+# compass compile clean_base/ $*;
+# compass compile subtheme/ $*;
