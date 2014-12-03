@@ -1,5 +1,34 @@
 <?php
 /**
+ * Implement of hook_preprocess_region()
+ */
+/**
+ * Add body classes if certain regions have content.
+ */
+function scalar_preprocess_html(&$vars) {
+  $vars['page']['sidebar_first']['region_wrapper'] = 'test'
+  krumo($vars['page']['sidebar_first']);
+//  if (!empty($variables['page']['featured'])) {
+//    $variables['classes_array'][] = 'featured';
+//  }
+//
+//  if (!empty($variables['page']['triptych_first'])
+//    || !empty($variables['page']['triptych_middle'])
+//    || !empty($variables['page']['triptych_last'])
+//  ) {
+//    $variables['classes_array'][] = 'triptych';
+//  }
+//
+//  if (!empty($variables['page']['footer_firstcolumn'])
+//    || !empty($variables['page']['footer_secondcolumn'])
+//    || !empty($variables['page']['footer_thirdcolumn'])
+//    || !empty($variables['page']['footer_fourthcolumn'])
+//  ) {
+//    $variables['classes_array'][] = 'footer-columns';
+//  }
+}
+
+/**
  * Implements theme_menu_tree().
  */
 function scalar_menu_tree($variables) {
