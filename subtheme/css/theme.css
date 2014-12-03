@@ -24,6 +24,8 @@ _____________________________________
 /*
 | Bootstrap vendor variable
 | */
+/* Bootstrap tipography variable
+ */
 /*#################
 ## Bundle for mixin
 #################### */
@@ -1481,6 +1483,273 @@ form .form-item.block-inner input {
     margin-left: 100%;
   }
 }
+/*
+| Typography bootstrap
+ */
+/* Headings
+ */
+/* line 9, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+/* line 16, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+h1 small,
+h1 .small, h2 small,
+h2 .small, h3 small,
+h3 .small, h4 small,
+h4 .small, h5 small,
+h5 .small, h6 small,
+h6 .small,
+.h1 small,
+.h1 .small, .h2 small,
+.h2 .small, .h3 small,
+.h3 .small, .h4 small,
+.h4 .small, .h5 small,
+.h5 .small, .h6 small,
+.h6 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+
+/* line 25, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/* line 30, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+h1 small,
+h1 .small, .h1 small,
+.h1 .small,
+h2 small,
+h2 .small, .h2 small,
+.h2 .small,
+h3 small,
+h3 .small, .h3 small,
+.h3 .small {
+  font-size: 65%;
+}
+
+/* line 37, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 42, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+h4 small,
+h4 .small, .h4 small,
+.h4 .small,
+h5 small,
+h5 .small, .h5 small,
+.h5 .small,
+h6 small,
+h6 .small, .h6 small,
+.h6 .small {
+  font-size: 75%;
+}
+
+/* line 47, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+h1, .h1 {
+  font-size: 36px;
+}
+
+/* line 48, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+h2, .h2 {
+  font-size: 30px;
+}
+
+/* line 49, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+h3, .h3 {
+  font-size: 24px;
+}
+
+/* line 50, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+h4, .h4 {
+  font-size: 18px;
+}
+
+/* line 51, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+h5, .h5 {
+  font-size: 14px;
+}
+
+/* line 52, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+h6, .h6 {
+  font-size: 12px;
+}
+
+/* Body text
+ */
+/* line 57, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+p {
+  margin: 0 0 10px;
+}
+
+/* line 61, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+.lead {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+@media (min-width: 768px) {
+  /* line 61, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+  .lead {
+    font-size: 21px;
+  }
+}
+
+/* Emphasis & misc
+ */
+/* line 76, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+small,
+.small {
+  font-size: 85%;
+}
+
+/* line 81, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+mark,
+.mark {
+  background-color: #fcf8e3;
+  padding: .2em;
+}
+
+/* Contextual colors
+ */
+/* line 96, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+.text-muted {
+  color: #999999;
+}
+
+/* Lists  ( Unordered and Ordered lists )
+ */
+/* line 103, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+/* line 107, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-bottom: 0;
+}
+
+/* line 113, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+.list-unstyled {
+  background: none;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* line 120, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+dl {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* line 125, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+dt,
+dd {
+  line-height: 1.42857;
+}
+
+/* line 128, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 131, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+dd {
+  margin-left: 0;
+}
+
+/* Misc
+ */
+/* line 140, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #999999;
+}
+
+/* line 144, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+/* line 150, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 12px;
+  border-left: 5px solid #eeeeee;
+}
+/* line 159, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+blockquote p:last-child,
+blockquote ul:last-child,
+blockquote ol:last-child {
+  margin-bottom: 0;
+}
+/* line 168, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+blockquote footer,
+blockquote small,
+blockquote .small {
+  display: block;
+  font-size: 80%;
+  line-height: 1.42857;
+  color: #999999;
+}
+/* line 174, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+blockquote footer:before,
+blockquote small:before,
+blockquote .small:before {
+  content: '\2014 \00A0';
+}
+
+/* Opposite alignment of blockquote
+ */
+/* line 182, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+.blockquote-reverse {
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #eeeeee;
+  border-left: 0;
+  text-align: right;
+}
+/* line 193, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+.blockquote-reverse footer:before,
+.blockquote-reverse small:before,
+.blockquote-reverse .small:before {
+  content: '';
+}
+/* line 194, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+.blockquote-reverse footer:after,
+.blockquote-reverse small:after,
+.blockquote-reverse .small:after {
+  content: '\00A0 \2014';
+}
+
+/* Addresses
+ */
+/* line 202, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 1.42857;
+}
+
 /*
 | import theme from core theme
 | you can read guideline about making custom theme bundle for subtheme */

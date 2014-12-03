@@ -1,0 +1,43 @@
+/* Bootstrap tipography variable
+ */
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              lighten(#000, 20%) !default;   // #333
+$gray:                   lighten(#000, 33.5%) !default; // #555
+$gray-light:             lighten(#000, 60%) !default;   // #999
+$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+
+// font-size
+$font-size-base:          14px !default;
+$font-size-large:         ceil($font-size-base * 1.25) !default; // ~18px
+$font-size-small:         ceil($font-size-base * 0.85) !default; // ~12px
+
+$line-height-base:        1.428571429 !default; // 20/14
+
+// headings
+$headings-font-family:    inherit !default;
+$headings-font-weight:    500 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
+$headings-small-color:    lighten(#000, 60%) !default; // #999
+$line-height-computed:    floor($font-size-base * $line-height-base) !default; // ~20px
+
+// font-size heading
+$font-size-h1:            floor($font-size-base * 2.6) !default; // ~36px
+$font-size-h2:            floor($font-size-base * 2.15) !default; // ~30px
+$font-size-h3:            ceil($font-size-base * 1.7) !default; // ~24px
+$font-size-h4:            ceil($font-size-base * 1.25) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil($font-size-base * 0.85) !default; // ~12px
+
+//state-warning
+
+$state-warning-bg:        #fcf8e3 !default;
+$state-warning-border:    darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$text-muted:              $gray-light !default;
+$abbr-border-color:       $gray-light !default;
+
+// blockquote
+$blockquote-font-size: 12px !default;
+$blockquote-border-color:     $gray-lighter !default;
+$blockquote-small-color:      $gray-light !default;

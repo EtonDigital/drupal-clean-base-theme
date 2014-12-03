@@ -9,7 +9,6 @@ echo ...
 echo ...
   echo " Themes compiled..."
 ;;
-
 'help' )
   echo -e
   echo "Usage: theme"
