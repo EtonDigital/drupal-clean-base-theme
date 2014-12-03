@@ -291,13 +291,6 @@ code {
   display: block;
 }
 
-/* line 16, ../../scalar/sass/core/minimal/_layout.scss */
-.grayscale {
-  filter: url(filters.svg#grayscale);
-  filter: gray;
-  -webkit-filter: grayscale(1);
-}
-
 /* line 1, ../../scalar/sass/core/minimal/_table.scss */
 table {
   width: 100%;
