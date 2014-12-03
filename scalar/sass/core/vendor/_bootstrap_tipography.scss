@@ -111,9 +111,7 @@ ol {
 
 // unstyled list
 .list-unstyled {
-  background: none;
-  padding-left: 0;
-  list-style: none;
+  @extend %unlist;
 }
 
 // Description Lists

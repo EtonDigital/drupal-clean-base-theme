@@ -47,6 +47,15 @@ _____________________________________
   transform: translateY(-50%);
 }
 
+/* unstled list
+ */
+/* line 22, ../../scalar/sass/require/extend/_element.scss */
+.list-unstyled, #main-menu ul {
+  background: none;
+  padding-left: 0;
+  list-style: none;
+}
+
 /*
 | Require
 | include require variable, mixin , extends */
@@ -1657,64 +1666,57 @@ ol ol {
   margin-bottom: 0;
 }
 
-/* line 113, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
-.list-unstyled {
-  background: none;
-  padding-left: 0;
-  list-style: none;
-}
-
-/* line 120, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+/* line 118, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
 dl {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-/* line 125, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+/* line 123, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
 dt,
 dd {
   line-height: 1.42857;
 }
 
-/* line 128, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+/* line 126, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 131, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+/* line 129, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
 dd {
   margin-left: 0;
 }
 
 /* Misc
  */
-/* line 140, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+/* line 138, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted #999999;
 }
 
-/* line 144, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+/* line 142, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
 .initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
 
-/* line 150, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+/* line 148, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 12px;
   border-left: 5px solid #eeeeee;
 }
-/* line 159, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+/* line 157, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
 blockquote p:last-child,
 blockquote ul:last-child,
 blockquote ol:last-child {
   margin-bottom: 0;
 }
-/* line 168, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+/* line 166, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
 blockquote footer,
 blockquote small,
 blockquote .small {
@@ -1723,7 +1725,7 @@ blockquote .small {
   line-height: 1.42857;
   color: #999999;
 }
-/* line 174, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+/* line 172, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
 blockquote footer:before,
 blockquote small:before,
 blockquote .small:before {
@@ -1732,7 +1734,7 @@ blockquote .small:before {
 
 /* Opposite alignment of blockquote
  */
-/* line 182, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+/* line 180, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
 .blockquote-reverse {
   padding-right: 15px;
   padding-left: 0;
@@ -1740,13 +1742,13 @@ blockquote .small:before {
   border-left: 0;
   text-align: right;
 }
-/* line 193, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+/* line 191, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
 .blockquote-reverse footer:before,
 .blockquote-reverse small:before,
 .blockquote-reverse .small:before {
   content: '';
 }
-/* line 194, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+/* line 192, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
 .blockquote-reverse footer:after,
 .blockquote-reverse small:after,
 .blockquote-reverse .small:after {
@@ -1755,7 +1757,7 @@ blockquote .small:before {
 
 /* Addresses
  */
-/* line 202, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
+/* line 200, ../../scalar/sass/core/vendor/_bootstrap_tipography.scss */
 address {
   margin-bottom: 20px;
   font-style: normal;
@@ -1768,29 +1770,44 @@ address {
 /*#############################
 ## theme bundle
 ################################*/
-/* Layout */
-/* Footer on bottom */
-/* line 4, ../../scalar/sass/theme_scss/_layout.scss */
+/*
+ | Layout
+ */
+/* Footer on bottom
+ */
+/* line 7, ../../scalar/sass/theme_scss/_layout.scss */
 .page-main {
   min-height: 100%;
 }
 
-/* line 8, ../../scalar/sass/theme_scss/_layout.scss */
+/* line 11, ../../scalar/sass/theme_scss/_layout.scss */
 #page-wrapper {
   padding-bottom: 30px;
 }
 
-/* line 12, ../../scalar/sass/theme_scss/_layout.scss */
+/* line 15, ../../scalar/sass/theme_scss/_layout.scss */
 #page-footer {
   clear: both;
   margin-top: -20px;
 }
 
-/* page holder */
-/* line 18, ../../scalar/sass/theme_scss/_layout.scss */
+/* page holder
+ */
+/* line 22, ../../scalar/sass/theme_scss/_layout.scss */
 .page-holder {
   max-width: 1024px;
   width: 100%;
+}
+
+/* main-menu
+ */
+/* line 36, ../../scalar/sass/theme_scss/_layout.scss */
+#main-menu li {
+  display: inline-block;
+}
+/* line 40, ../../scalar/sass/theme_scss/_layout.scss */
+#main-menu a {
+  display: inline-block;
 }
 
 /* bundler theme */

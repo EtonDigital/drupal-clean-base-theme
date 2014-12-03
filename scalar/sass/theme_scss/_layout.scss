@@ -1,6 +1,9 @@
-/* Layout */
+/*
+ | Layout
+ */
 
-/* Footer on bottom */
+/* Footer on bottom
+ */
 .page-main {
   min-height: 100%;
 }
@@ -14,8 +17,28 @@
   margin-top: - $footer-height;
 }
 
-/* page holder */
+/* page holder
+ */
 .page-holder {
   max-width: $page-width;
   width: 100%;
+}
+
+
+/* main-menu
+ */
+#main-menu {
+
+  ul {
+    @extend %unlist;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: inline-block;
+  }
+
 }
