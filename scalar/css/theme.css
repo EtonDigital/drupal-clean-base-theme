@@ -1504,3 +1504,7 @@ form .form-item.block-inner input {
   max-width: 1024px;
   width: 100%;
 }
+
+/*
+| Overide for overide all element
+| Must be a last css loaded fiel */
