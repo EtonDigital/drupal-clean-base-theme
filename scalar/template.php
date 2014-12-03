@@ -12,7 +12,7 @@ function scalar_preprocess_page(&$vars) {
   $regions = system_region_list('scalar', REGIONS_VISIBLE);
   unset($regions['content']);
 
-  $vars['region_class'] = [];
+  $vars['region_class'] = array();
   foreach(array_keys($regions) as $region) {
     if($vars['page'][$region]) {
       $size = theme_get_setting('scalar_r_' . $region, 'scalar');
