@@ -1,7 +1,5 @@
-/*###############################
-## Helper for hide text into file
-##################################*/
-
+/* Helper for hide text into file
+ */
 %hide {
 	display: block;
   overflow: hidden;
@@ -10,3 +8,11 @@
   text-transform: uppercase;
 }
 
+
+/* Vertical align Anything
+ */
+%verticalcenter {
+  position: relative;
+  top: 50%;
+  @include translateY(-50%);
+}

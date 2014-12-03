@@ -32,9 +32,21 @@ _____________________________________
 /*
 | Bootstrap mixin vendor
 | */
-/*###############################
-## Helper for hide text into file
-##################################*/
+/* Helper for hide text into file
+ */
+/* Vertical align Anything
+ */
+/* line 14, ../../scalar/sass/require/extend/_element.scss */
+.valign {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 /*
 | Require
 | include require variable, mixin , extends */
@@ -277,6 +289,13 @@ h4 small,
 /* line 6, ../../scalar/sass/core/minimal/_layout.scss */
 code {
   display: block;
+}
+
+/* line 16, ../../scalar/sass/core/minimal/_layout.scss */
+.grayscale {
+  filter: url(filters.svg#grayscale);
+  filter: gray;
+  -webkit-filter: grayscale(1);
 }
 
 /* line 1, ../../scalar/sass/core/minimal/_table.scss */

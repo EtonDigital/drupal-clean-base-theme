@@ -34,9 +34,21 @@ _____________________________________
 /*
 | Bootstrap mixin vendor
 | */
-/*###############################
-## Helper for hide text into file
-##################################*/
+/* Helper for hide text into file
+ */
+/* Vertical align Anything
+ */
+/* line 14, ../sass/require/extend/_element.scss */
+.valign {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 /* core theme */
 /* api core */
 /* line 6, ../sass/core/api_reset/_form_res.scss */
@@ -272,6 +284,13 @@ h4 small,
 /* line 6, ../sass/core/minimal/_layout.scss */
 code {
   display: block;
+}
+
+/* line 16, ../sass/core/minimal/_layout.scss */
+.grayscale {
+  filter: url(filters.svg#grayscale);
+  filter: gray;
+  -webkit-filter: grayscale(1);
 }
 
 /* line 1, ../sass/core/minimal/_table.scss */
