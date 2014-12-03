@@ -54,20 +54,11 @@ function scalar_form_system_theme_settings_alter(&$form, &$form_state) {
   );
 
   foreach($regions as $reg => $title) {
-    $default_value = theme_get_setting('scalar_r_' . $reg);
-    if(empty($default_value)) {
-      if(preg_match('/sidebar*/', $reg)) {
-        $default_value = 4;
-      }
-      else {
-        $default_value = theme_get_setting('scalar_g_size') ?: 12;
-      }
-    }
-
     $form['grid']['regions']['scalar_r_' . $reg] = array(
       '#type' => 'select',
       '#title' => t($title),
       '#options' => array(
+        '' => t('None'),
         4 => t('4 Columns'),
         8 => t('8 Columns'),
         12 => t('12 Columns'),
@@ -76,7 +67,7 @@ function scalar_form_system_theme_settings_alter(&$form, &$form_state) {
         18 => t('18 Columns'),
         20 => t('20 Columns'),
       ),
-      '#default_value' => $default_value,
+      '#default_value' => theme_get_setting('scalar_r_' . $reg)?: '',
     );
   }
 }

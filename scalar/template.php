@@ -5,27 +5,27 @@
 /**
  * Add body classes if certain regions have content.
  */
-function scalar_preprocess_html(&$vars) {
-  $vars['page']['sidebar_first']['region_wrapper'] = 'test'
-  krumo($vars['page']['sidebar_first']);
-//  if (!empty($variables['page']['featured'])) {
-//    $variables['classes_array'][] = 'featured';
-//  }
-//
-//  if (!empty($variables['page']['triptych_first'])
-//    || !empty($variables['page']['triptych_middle'])
-//    || !empty($variables['page']['triptych_last'])
-//  ) {
-//    $variables['classes_array'][] = 'triptych';
-//  }
-//
-//  if (!empty($variables['page']['footer_firstcolumn'])
-//    || !empty($variables['page']['footer_secondcolumn'])
-//    || !empty($variables['page']['footer_thirdcolumn'])
-//    || !empty($variables['page']['footer_fourthcolumn'])
-//  ) {
-//    $variables['classes_array'][] = 'footer-columns';
-//  }
+function scalar_preprocess_page(&$vars) {
+  $grid_class = theme_get_setting('scalar_g_class') ?: 'col-md' . '-';
+  $content_size = theme_get_setting('scalar_g_size') ?: 12;
+
+  $regions = system_region_list('scalar', REGIONS_VISIBLE);
+  unset($regions['content']);
+
+  $vars['region_class'] = [];
+  foreach(array_keys($regions) as $region) {
+    if($vars['page'][$region]) {
+      $size = theme_get_setting('scalar_r_' . $region, 'scalar');
+
+      $vars['region_class'][$region] = $size ?  $grid_class . $size : '';
+      if(substr($region, 0, 7) == 'sidebar' && !empty($size)) {
+        $content_size -= $size;
+      }
+    }
+  }
+
+  // Set class for content
+  $vars['region_class']['content'] = $grid_class . $content_size;
 }
 
 /**

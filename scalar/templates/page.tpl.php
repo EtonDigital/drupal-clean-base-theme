@@ -62,8 +62,9 @@
       <?php endif; ?>
 
       <!-- Sidebar First -->
+
       <?php if ($page['sidebar_first']): ?>
-        <section id="sidebar-first">
+        <section id="sidebar-first" class="<?php print $region_class['sidebar_first']; ?>">
           <?php print render($page['sidebar_first']); ?>
         </section>
       <?php endif; ?>
@@ -90,7 +91,9 @@
       <?php endif; ?>
 
       <!-- Page content-->
-      <?php print render($page['content']); ?>
+      <section id="page-content" class="<?php print $region_class['content']; ?>">
+        <?php print render($page['content']); ?>
+      </section>
 
       <!-- Sidebar second-->
       <?php if ($page['sidebar_second']): ?>
