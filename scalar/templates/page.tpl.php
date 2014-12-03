@@ -2,7 +2,7 @@
 
   <!-- Header -->
   <header id="page-header">
-    <div class="page-holder">
+    <div class="container">
 
       <!-- Logo -->
       <?php if ($logo): ?>
@@ -43,7 +43,7 @@
         </div>
       <?php endif; ?>
 
-    </div> <!-- page-holder -->
+    </div> <!-- container -->
   </header>
 
   <!-- Messages -->
@@ -54,7 +54,7 @@
   <?php endif; ?>
 
   <section id="page-wrapper">
-    <div class="page-holder">
+    <div class="container">
 
       <!-- Breadcrumb -->
       <?php if ($breadcrumb): ?>
@@ -102,7 +102,7 @@
         </section>
       <?php endif; ?>
 
-    </div> <!-- page-holder-->
+    </div> <!-- container-->
   </section> <!-- page-wrapper -->
 
 </div> <!-- page -->
@@ -110,8 +110,10 @@
 
 <!-- Footer -->
 <footer id="page-footer">
-  <?php if ($page['footer']): ?>
-    <?php print render($page['footer']); ?>
-  <?php endif; ?>
+  <div class="container">
+    <?php if ($page['footer']): ?>
+      <?php print render($page['footer']); ?>
+    <?php endif; ?>
+  </div>
 </footer>
 
