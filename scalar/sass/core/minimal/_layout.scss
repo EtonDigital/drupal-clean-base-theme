@@ -11,10 +11,3 @@ code {
 .valign {
   @extend %verticalcenter;
 }
-
-// grayscale image
-//.grayscale {
-//  filter: url(filters.svg#grayscale);
-//  filter: gray;
-//  -webkit-filter: grayscale(1);
-//}
