@@ -26,7 +26,7 @@ function scalar_preprocess_page(&$vars) {
     if ($vars['page'][$region]) {
       $size = theme_get_setting('scalar_r_' . $region, 'scalar');
 
-      $vars['region_class'][$region] = $size ? $grid_class . '-' . $size : '';
+      $vars['region_class'][$region] = $size ? $grid_class . '-' . $size : 'no-grid';
       if (substr($region, 0, 7) == 'sidebar' && !empty($size)) {
         $content_size -= $size;
       }
