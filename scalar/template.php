@@ -1,31 +1,40 @@
 <?php
 /**
- * Implement of hook_preprocess_region()
+ * Implement of hook_preprocess_html()
  */
+function scalar_preprocess_html(&$vars) {
+  // Disable responsive if grid class is 'col-xs'
+  $grid_class = theme_get_setting('scalar_g_class');
+
+  if($grid_class == 'col-xs') {
+    $vars['classes_array'][] = 'col-static';
+  }
+}
+
 /**
- * Add body classes if certain regions have content.
+ * Implement of hook_preprocess_page()
  */
 function scalar_preprocess_page(&$vars) {
-  $grid_class = theme_get_setting('scalar_g_class') ?: 'col-md' . '-';
+  $grid_class = theme_get_setting('scalar_g_class') ?: 'col-md';
   $content_size = theme_get_setting('scalar_g_size') ?: 12;
 
   $regions = system_region_list('scalar', REGIONS_VISIBLE);
   unset($regions['content']);
 
   $vars['region_class'] = array();
-  foreach(array_keys($regions) as $region) {
-    if($vars['page'][$region]) {
+  foreach (array_keys($regions) as $region) {
+    if ($vars['page'][$region]) {
       $size = theme_get_setting('scalar_r_' . $region, 'scalar');
 
-      $vars['region_class'][$region] = $size ?  $grid_class . $size : '';
-      if(substr($region, 0, 7) == 'sidebar' && !empty($size)) {
+      $vars['region_class'][$region] = $size ? $grid_class . '-' . $size : '';
+      if (substr($region, 0, 7) == 'sidebar' && !empty($size)) {
         $content_size -= $size;
       }
     }
   }
 
   // Set class for content
-  $vars['region_class']['content'] = $grid_class . $content_size;
+  $vars['region_class']['content'] = $grid_class . '-' . $content_size;
 }
 
 /**

@@ -10,6 +10,7 @@
 function scalar_form_system_theme_settings_alter(&$form, &$form_state) {
   $regions = system_region_list('scalar', REGIONS_VISIBLE);
   unset($regions['content']);
+  $grid_size = theme_get_setting('scalar_g_size') ?: 12;
 
   //print_r($regions);die;
   $form['grid'] = array(
@@ -31,7 +32,7 @@ function scalar_form_system_theme_settings_alter(&$form, &$form_state) {
       18 => t('18 Columns'),
       20 => t('20 Columns'),
     ),
-    '#default_value' => theme_get_setting('scalar_g_size') ?: 12,
+    '#default_value' => $grid_size,
   );
 
   $form['grid']['scalar_g_class'] = array(
@@ -53,20 +54,16 @@ function scalar_form_system_theme_settings_alter(&$form, &$form_state) {
     '#collapsed' => TRUE,
   );
 
+  $options = array('' => t('None'));
+  for($i = 1; $i<= $grid_size; $i++) {
+    $options[$i] = t('@size Columns', array('@size' => $i));
+  }
+
   foreach($regions as $reg => $title) {
     $form['grid']['regions']['scalar_r_' . $reg] = array(
       '#type' => 'select',
       '#title' => t($title),
-      '#options' => array(
-        '' => t('None'),
-        4 => t('4 Columns'),
-        8 => t('8 Columns'),
-        12 => t('12 Columns'),
-        14 => t('14 Columns'),
-        16 => t('16 Columns'),
-        18 => t('18 Columns'),
-        20 => t('20 Columns'),
-      ),
+      '#options' => $options,
       '#default_value' => theme_get_setting('scalar_r_' . $reg)?: '',
     );
   }
