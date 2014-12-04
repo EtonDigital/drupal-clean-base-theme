@@ -40,3 +40,8 @@ CSS - How to exclude core css?
 
  * Uncomment the clean_base_css_alter() function it the base theme in template.php,
    and after that uncomment or add a line of css which you want to exclude.
+
+CSS - How to disable responsive?
+--------------------------------
+
+ * In Grid settings section select 'col-xs' as Grid class. That is all you need to do.
