@@ -1,0 +1,16 @@
+/* Form styling
+ */
+.form-submit {
+  background: #13628e;
+  padding: 2px 9px;
+  color: #fff;
+  border-width: 4px 0;
+  border-color: transparent;
+  border-style: solid;
+  @include border-radius( 2px );
+
+  &:hover {
+    border-bottom-color: #63b9ff;
+    @include box-shadow(  0px 1px 0px rgba(0,0,0,0.2));
+  }
+}

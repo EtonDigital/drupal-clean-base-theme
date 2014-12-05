@@ -8,11 +8,11 @@
   min-height: 100%;
 }
 
-#page-wrapper {
+.page-wrapper {
   padding-bottom: $footer-height + $footer-margin;
 }
 
-#page-footer {
+.page-footer {
   clear: both;
   margin-top: - $footer-height;
 }
@@ -22,23 +22,4 @@
 .page-holder {
   max-width: $page-width;
   width: 100%;
-}
-
-
-/* main-menu
- */
-#main-menu {
-
-  ul {
-    @extend %unlist;
-  }
-
-  li {
-    display: inline-block;
-  }
-
-  a {
-    display: inline-block;
-  }
-
 }

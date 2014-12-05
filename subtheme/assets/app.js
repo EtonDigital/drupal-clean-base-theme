@@ -9,7 +9,7 @@
        // main plugin call go here
        // in format = $('some el' , context ).pluginName();
 
-       $('.messages', context).messsageClose();
+       //$('.messages', context).messsageClose();
 
      }
    };

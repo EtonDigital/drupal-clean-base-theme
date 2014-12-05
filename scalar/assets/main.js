@@ -4,6 +4,21 @@
 
 (function($) {
 
+  Drupal.behaviors.main = {
+    attach: function (context, settings) {
+      // main plugin call go here
+      // in format = $('some el' , context ).pluginName();
+
+      $('.messages', context).messsageClose();
+
+    }
+  };
+
+})(jQuery);
+
+
+(function($) {
+
   // message close init btn
 	$.messsageClose = function( element , options ) {
 
@@ -50,6 +65,7 @@
 	  });
 	};
 // end message close
+
 
 
 })(jQuery);

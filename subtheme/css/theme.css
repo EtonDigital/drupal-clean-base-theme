@@ -50,7 +50,7 @@ _____________________________________
 /* unstled list
  */
 /* line 22, ../../scalar/sass/require/extend/_element.scss */
-.list-unstyled, #main-menu ul {
+.list-unstyled, [id=main-menu-links] {
   background: none;
   padding-left: 0;
   list-style: none;
@@ -138,13 +138,15 @@ html {
 /* line 20, ../../scalar/sass/core/api_reset/_layout_res.scss */
 body {
   -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
   box-sizing: border-box;
   height: 100%;
   margin: 0;
   overflow-y: auto;
+}
+/* line 28, ../../scalar/sass/core/api_reset/_layout_res.scss */
+body.col-static .container {
+  min-width: 1200px !important;
 }
 
 /*################
@@ -1781,12 +1783,12 @@ address {
 }
 
 /* line 11, ../../scalar/sass/theme_scss/_layout.scss */
-#page-wrapper {
+.page-wrapper {
   padding-bottom: 30px;
 }
 
 /* line 15, ../../scalar/sass/theme_scss/_layout.scss */
-#page-footer {
+.page-footer {
   clear: both;
   margin-top: -20px;
 }
@@ -1799,15 +1801,50 @@ address {
   width: 100%;
 }
 
+/* Form styling
+ */
+/* line 3, ../../scalar/sass/theme_scss/_forms.scss */
+.form-submit {
+  background: #13628e;
+  padding: 2px 9px;
+  color: #fff;
+  border-width: 4px 0;
+  border-color: transparent;
+  border-style: solid;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 12, ../../scalar/sass/theme_scss/_forms.scss */
+.form-submit:hover {
+  border-bottom-color: #63b9ff;
+  -webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
 /* main-menu
  */
-/* line 36, ../../scalar/sass/theme_scss/_layout.scss */
-#main-menu li {
+/* line 7, ../../scalar/sass/theme_scss/_objects.scss */
+[id=main-menu-links] a,
+[id=main-menu-links] li {
   display: inline-block;
 }
-/* line 40, ../../scalar/sass/theme_scss/_layout.scss */
-#main-menu a {
-  display: inline-block;
+/* line 11, ../../scalar/sass/theme_scss/_objects.scss */
+[id=main-menu-links] a {
+  padding: 5px;
+  text-decoration: none;
+  border-bottom: 2px solid #5f8fd1;
+}
+/* line 16, ../../scalar/sass/theme_scss/_objects.scss */
+[id=main-menu-links] a:hover {
+  border-bottom-color: #36a82c;
+}
+/* line 21, ../../scalar/sass/theme_scss/_objects.scss */
+[id=main-menu-links] .active-trail a {
+  border-bottom-color: #2c6d26;
 }
 
 /* bundler theme */

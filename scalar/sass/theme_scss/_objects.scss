@@ -1,0 +1,25 @@
+/* main-menu
+ */
+[id=main-menu-links] {
+  @extend %unlist;
+
+  a,
+  li {
+    display: inline-block;
+  }
+
+  a {
+    padding: 5px;
+    text-decoration: none;
+    border-bottom: 2px solid #5f8fd1;
+
+    &:hover {
+      border-bottom-color: #36a82c;
+    }
+  }
+
+  .active-trail a {
+    border-bottom-color: #2c6d26;
+  }
+
+}

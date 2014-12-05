@@ -1,7 +1,7 @@
 <div class="page-main">
 
   <!-- Header -->
-  <header id="page-header">
+  <header id="page-header" class="page-header">
     <div class="container">
 
       <div class="row">
@@ -59,7 +59,7 @@
     </section>
   <?php endif; ?>
 
-  <section id="page-wrapper">
+  <section id="page-wrapper" class="page-wrapper">
     <div class="container">
 
       <!-- Breadcrumb -->
@@ -120,7 +120,7 @@
 
 
 <!-- Footer -->
-<footer id="page-footer">
+<footer id="page-footer" class="page-footer">
   <div class="container">
     <div class="row">
       <div class="<?php print $region_class['footer']; ?>">
