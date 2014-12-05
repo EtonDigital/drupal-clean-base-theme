@@ -28,6 +28,8 @@ _____________________________________
 | */
 /* Bootstrap tipography variable
  */
+/* Drupal vars
+ */
 /*#################
 ## Bundle for mixin
 #################### */
@@ -1838,6 +1840,45 @@ address {
 /* line 21, ../sass/theme_scss/_objects.scss */
 [id=main-menu-links] .active-trail a {
   border-bottom-color: #2c6d26;
+}
+
+/* Drupal tabs
+ */
+/* line 3, ../sass/theme_scss/_drupal.scss */
+ul.tabs.primary {
+  margin: 15px 0;
+  border-bottom-width: 4px;
+}
+/* line 7, ../sass/theme_scss/_drupal.scss */
+ul.tabs.primary li {
+  display: inline-block;
+}
+/* line 13, ../sass/theme_scss/_drupal.scss */
+ul.tabs.primary a:hover,
+ul.tabs.primary .active a,
+ul.tabs.primary a {
+  background-color: #157cb9;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  padding: 3px 8px;
+  margin: 0;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+/* line 23, ../sass/theme_scss/_drupal.scss */
+ul.tabs.primary a {
+  position: relative;
+  bottom: -3px;
+}
+/* line 28, ../sass/theme_scss/_drupal.scss */
+ul.tabs.primary a:hover, ul.tabs.primary a.active {
+  bottom: -3px;
+  padding-bottom: 6px;
+  padding-top: 6px;
 }
 
 /*
