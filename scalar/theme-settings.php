@@ -8,7 +8,13 @@
  * Implements hook_form_FORM_ID_alter().
  */
 function scalar_form_system_theme_settings_alter(&$form, &$form_state) {
+  $theme = $form_state['build_info']['args'][0];
   $regions = system_region_list('scalar', REGIONS_VISIBLE);
+
+  if ($theme != 'scalar') {
+    $regions += system_region_list($theme, REGIONS_VISIBLE);
+  }
+  
   unset($regions['content']);
   $grid_size = theme_get_setting('scalar_g_size') ?: 12;
 
