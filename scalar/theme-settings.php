@@ -14,7 +14,7 @@ function scalar_form_system_theme_settings_alter(&$form, &$form_state) {
   if ($theme != 'scalar') {
     $regions += system_region_list($theme, REGIONS_VISIBLE);
   }
-  
+
   unset($regions['content']);
   $grid_size = theme_get_setting('scalar_g_size') ?: 12;
 

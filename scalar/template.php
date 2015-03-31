@@ -15,15 +15,19 @@ function scalar_preprocess_html(&$vars) {
  * Implement of hook_preprocess_page()
  */
 function scalar_preprocess_page(&$vars) {
+  global $theme;
   $grid_class = theme_get_setting('scalar_g_class') ?: 'col-md';
   $content_size = theme_get_setting('scalar_g_size') ?: 12;
 
   $regions = system_region_list('scalar', REGIONS_VISIBLE);
+  if ($theme != 'scalar') {
+    $regions += system_region_list($theme, REGIONS_VISIBLE);
+  }
   unset($regions['content']);
 
   $vars['region_class'] = array();
   foreach (array_keys($regions) as $region) {
-    if ($vars['page'][$region]) {
+    if (isset($vars['page'][$region])) {
       $size = theme_get_setting('scalar_r_' . $region);
 
       $vars['region_class'][$region] = $size ? $grid_class . '-' . $size : 'no-grid';

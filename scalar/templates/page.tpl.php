@@ -14,7 +14,7 @@
 
 
         <!-- Region Header -->
-        <?php if ($page['header']): ?>
+        <?php if (isset($page['header'])): ?>
           <div <?php print $region_class['header']; ?>>
             <?php print render($page['header']); ?>
           </div>
@@ -71,7 +71,7 @@
 
       <div class="row">
         <!-- Sidebar First -->
-        <?php if ($page['sidebar_first']): ?>
+        <?php if (isset($page['sidebar_first'])): ?>
           <section id="sidebar-first" class="<?php print $region_class['sidebar_first']; ?>">
             <?php print render($page['sidebar_first']); ?>
           </section>
@@ -106,7 +106,7 @@
         </section>
 
         <!-- Sidebar second-->
-        <?php if ($page['sidebar_second']): ?>
+        <?php if (isset($page['sidebar_second'])): ?>
           <section id="sidebar-second" class="<?php print $region_class['sidebar_second']; ?>">
             <?php print render($page['sidebar_second']); ?>
           </section>
@@ -120,15 +120,15 @@
 
 
 <!-- Footer -->
-<footer id="page-footer" class="page-footer">
-  <div class="container">
-    <div class="row">
-      <div class="<?php print $region_class['footer']; ?>">
-        <?php if ($page['footer']): ?>
-          <?php print render($page['footer']); ?>
-        <?php endif; ?>
+<?php if (isset($page['footer'])): ?>
+  <footer id="page-footer" class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="<?php print $region_class['footer']; ?>">
+            <?php print render($page['footer']); ?>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
+<?php endif; ?>
 
