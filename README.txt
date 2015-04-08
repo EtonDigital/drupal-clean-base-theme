@@ -43,5 +43,6 @@ CSS - How to exclude core css?
 
 CSS - How to disable responsive?
 --------------------------------
-
+   
+ * test commit
  * In Grid settings section select 'col-xs' as Grid class. That is all you need to do.
