@@ -1806,13 +1806,14 @@ address {
   border-width: 4px 0;
   border-color: transparent;
   border-style: solid;
+  -webkit-appearance: none;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 12, ../sass/theme_scss/_forms.scss */
+/* line 13, ../sass/theme_scss/_forms.scss */
 .form-submit:hover {
   border-bottom-color: #63b9ff;
   -webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
@@ -1820,12 +1821,12 @@ address {
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* line 18, ../sass/theme_scss/_forms.scss */
+/* line 19, ../sass/theme_scss/_forms.scss */
 .form-actions {
   margin-left: -5px;
   margin-right: -5px;
 }
-/* line 22, ../sass/theme_scss/_forms.scss */
+/* line 23, ../sass/theme_scss/_forms.scss */
 .form-actions .form-submit {
   margin: 0 5px;
 }
