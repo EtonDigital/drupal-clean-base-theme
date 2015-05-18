@@ -30,6 +30,7 @@ Clean base theme For Drupal 7 - under development
 #File structure:
 
 BUILD
+
     -.npm
         --Gulpfile.js
         --.node_modules
@@ -52,6 +53,7 @@ BUILD
     -subtheme
 
 PUBLIC
+
     -scalar
     -assets
         --css
