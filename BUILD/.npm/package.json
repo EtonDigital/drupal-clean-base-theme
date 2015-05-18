@@ -1,0 +1,34 @@
+{
+  "name": "Drupal-Gulp",
+  "version": "1.0.0",
+  "description": "Automated theming workflow with Gulp",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EtonDigital/drupal-clean-base-theme"
+  },
+  "keywords": [
+    "drupal",
+    "theme",
+    "gulp"
+  ],
+  "author": "Stevica Knezevic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EtonDigital/drupal-clean-base-theme/issues"
+  },
+  "homepage": "https://github.com/EtonDigital/drupal-clean-base-theme",
+  "dependencies": {
+    "browser-sync": "^2.7.1",
+    "gulp": "^3.8.11",
+    "gulp-compass": "^2.0.4",
+    "gulp-concat": "^2.5.2",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jade": "^1.0.0",
+    "gulp-jshint": "^1.10.0",
+    "gulp-shell": "^0.4.1",
+    "path": "^0.11.14"
+  }
+}

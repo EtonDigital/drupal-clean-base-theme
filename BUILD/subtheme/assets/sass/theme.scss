@@ -1,0 +1,49 @@
+/*
+| By:       Dejan Dudukovic
+|   G+:       https://www.google.com/+DejanDudukovic
+| Company:  EtonDigital
+|   G+:       https://plus.google.com/s/EtonDigital
+|   F :       https://www.facebook.com/etondigital
+|   W :       http://www.etondigital.com/
+| The MIT License (MIT)
+_____________________________________
+| theme is bundle of base style file for frontend
+| with defined standard for Drupal
+================================== */
+
+/*
+| Call required form base theme */
+@import "../../scalar/sass/require/require_bundle";
+
+/*
+| Require
+| include require variable, mixin , extends */
+@import "require/require_bundle";
+
+/* import sprites */
+//@import "../../clean_base/sass/sprites/sprite_bundle";
+@import "sprites/sprite_bundle";
+
+/* import core theme from prev theme */
+@import "../../scalar/sass/core/core_bundle";
+
+/*
+| import theme from core theme
+| you can read guideline about making custom theme bundle for subtheme */
+@import "../../scalar/sass/theme_scss/theme_bundle";
+
+/* bundler theme */
+@import "theme_scss/theme_bundle";
+
+
+//remove css
+@import "remove";
+
+
+/*
+| Overide for overide all element
+| Must be a last css loaded fiel */
+/* Overide from core theme */
+  //@import "../../clean_base/sass/overide/overide_bundle";
+/* Overide from sub theme */
+  //@import "overide/overide_bundle";

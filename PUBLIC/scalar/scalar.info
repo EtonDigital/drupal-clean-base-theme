@@ -17,13 +17,14 @@ regions[footer] = Footer
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
-;stylesheets[all][] = css/screen.css
-stylesheets[all][] = css/theme.css
+;stylesheets[all][] = vendor/
+;stylesheets[all][] = assets/css/screen.css
+stylesheets[all][] = assets/css/theme.css
 
 
 ; ;;;;;;;;;;;;;;;;;;;;;
 ; ;; Scripts
 ; ;;;;;;;;;;;;;;;;;;;;;
 
-scripts[] = 'assets/main.js'
+scripts[] = 'assets/scripts/main.js'
 

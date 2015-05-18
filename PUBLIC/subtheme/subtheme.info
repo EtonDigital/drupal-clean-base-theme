@@ -7,10 +7,10 @@ base theme = scalar
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
-stylesheets[all][] = css/theme.css
+stylesheets[all][] = assets/css/theme.css
 
 ; ;;;;;;;;;;;;;;;;;;;;;
 ; ;; Scripts
 ; ;;;;;;;;;;;;;;;;;;;;;
 
-scripts[] = 'assets/app.js'
+scripts[] = 'assets/scripts/app.js'
