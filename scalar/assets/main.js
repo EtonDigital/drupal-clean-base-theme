@@ -11,6 +11,13 @@
 
       $('.messages', context).messsageClose();
 
+
+      $('#toolbar', context).once('dru-res', function(){
+        $(this).drupalToolbar({
+          insertBefore: '.region-header'
+        });
+      });
+
     }
   };
 
@@ -18,6 +25,79 @@
 
 
 (function($) {
+
+  $.drupalToolbar = function( element , options ) {
+
+    element.data('drupalToolbar' , this);
+    var settings = {},
+      button, close,
+      preCalc = false,
+      obj = this;
+
+    this.init = function( options ) {
+      settings = $.extend( {} , $.drupalToolbar.defaultOptions , options );
+      element.data('settings-drupalToolbar', settings);
+      this.addButton();
+      this.attachEvent();
+
+      if( $(window).width() > settings.toolbarBreak ) {
+        $('body').addClass('toolbar');
+      } else {
+        $('body').removeClass('toolbar');
+      }
+
+      $(window).on('resize', function(){
+        if( $(this).width() > settings.toolbarBreak ) {
+          if( preCalc ) {
+            obj.preCalc();
+            $('body').addClass('toolbar');
+          }
+        } else {
+          if( preCalc == false ) {
+            preCalc = true;
+            $('body').removeClass('toolbar');
+          }
+        }
+      });
+
+    };
+
+    this.preCalc = function() {
+      preCalc = false;
+      var tmpTop = element.outerHeight();
+      $('body').css('padding-top',tmpTop);
+    };
+
+    this.attachEvent = function() {
+      button.on('click', function(){
+        element.show();
+      });
+
+      close.on('click', function(){
+        element.hide();
+      });
+    };
+
+    this.addButton = function() {
+      $( settings.insertBefore ).after('<a class="drupal-toolber-ex nav-mobile" href="javascript:;"><i class="fa fa-cogs"></i></a>');
+      button = $(settings.insertBefore).parent().find('.drupal-toolber-ex');
+      close = $('<a class="cloase-toolbar" href="javascript:;"><i class="fa fa-times"></i></a>').appendTo(element);
+    };
+
+    this.init( options );
+  };
+
+  $.drupalToolbar.defaultOptions = {
+    target: false,
+    insertBefore: false,
+    toolbarBreak: 1190
+  };
+
+  $.fn.drupalToolbar = function(options) {
+    return this.each(function() {
+      (new $.drupalToolbar($(this), options));
+    });
+  };
 
   // message close init btn
 	$.messsageClose = function( element , options ) {

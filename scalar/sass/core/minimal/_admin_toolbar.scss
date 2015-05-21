@@ -1,0 +1,93 @@
+/*
+ | Drupal responsive toolbar theme
+*/
+@include res-min( $admin-toolbar-break + 1 ) {
+
+  .cloase-toolbar,
+  .nav-mobile.drupal-toolber-ex {
+    display: none !important;
+  }
+
+  #toolbar {
+    display: block !important;
+  }
+}
+
+@include res-max( $admin-toolbar-break ) {
+
+  .cloase-toolbar,
+  .nav-mobile.drupal-toolber-ex {
+    display: block !important;
+  }
+
+  body {
+    padding-top: 0 !important;
+  }
+
+  #toolbar {
+    display: none;
+    position: absolute;
+    padding: 30px 0 0;
+    margin: 0 !important;
+    top: 0;
+    left: 0;
+    min-width: 320px;
+
+    .cloase-toolbar {
+      position: absolute;
+      top: -3px;
+      right: 15px;
+      font-size: 18px;
+      padding: 5px;
+    }
+
+    ul {
+      display: block;
+    }
+
+    #toolbar-home,
+    #toolbar-user {
+      position: absolute;
+      top: 10px;
+    }
+
+    #toolbar-user {
+      right: 10px;
+    }
+
+    #toolbar-home {
+      left: 10px;
+    }
+
+    .toolbar-menu {
+      padding: 10px !important;
+    }
+
+    #toolbar-menu {
+      float: none;
+      margin-top: 30px;
+      overflow: hidden;
+
+      li {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+
+        a {
+          padding: 10px 14px;
+          border-bottom: 1px solid #b7ddd1;
+          @include border-radius( 0 );
+        }
+      }
+    }
+  }
+
+  #toolbar-drawer {
+    display: block;
+    visibility: visible;
+  }
+
+  .toolbar-toggle-processed {
+    display: none;
+  }
+}
