@@ -31,6 +31,9 @@ _____________________________________
 /*#################
 ## Bundle for mixin
 #################### */
+/*#######################
+## Media query responsive
+##########################*/
 /*
 | Bootstrap mixin vendor
 | */
@@ -293,6 +296,107 @@ h4 small,
 
 /* Bundle for minimal
  */
+/*
+ | Drupal responsive toolbar theme
+*/
+@media only screen and (min-width: 1191px) {
+  /* line 7, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  .cloase-toolbar,
+  .nav-mobile.drupal-toolber-ex {
+    display: none !important;
+  }
+
+  /* line 11, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  #toolbar {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 1190px) {
+  /* line 19, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  .cloase-toolbar,
+  .nav-mobile.drupal-toolber-ex {
+    display: block !important;
+  }
+
+  /* line 23, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  body {
+    padding-top: 0 !important;
+  }
+
+  /* line 27, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  #toolbar {
+    display: none;
+    position: absolute;
+    padding: 30px 0 0;
+    margin: 0 !important;
+    top: 0;
+    left: 0;
+    min-width: 320px;
+  }
+  /* line 36, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  #toolbar .cloase-toolbar {
+    position: absolute;
+    top: -3px;
+    right: 15px;
+    font-size: 18px;
+    padding: 5px;
+  }
+  /* line 44, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  #toolbar ul {
+    display: block;
+  }
+  /* line 49, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  #toolbar #toolbar-home,
+  #toolbar #toolbar-user {
+    position: absolute;
+    top: 10px;
+  }
+  /* line 54, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  #toolbar #toolbar-user {
+    right: 10px;
+  }
+  /* line 58, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  #toolbar #toolbar-home {
+    left: 10px;
+  }
+  /* line 62, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  #toolbar .toolbar-menu {
+    padding: 10px !important;
+  }
+  /* line 66, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  #toolbar #toolbar-menu {
+    float: none;
+    margin-top: 30px;
+    overflow: hidden;
+  }
+  /* line 71, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  #toolbar #toolbar-menu li {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  /* line 76, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  #toolbar #toolbar-menu li a {
+    padding: 10px 14px;
+    border-bottom: 1px solid #b7ddd1;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+  }
+
+  /* line 85, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  #toolbar-drawer {
+    display: block;
+    visibility: visible;
+  }
+
+  /* line 90, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  .toolbar-toggle-processed {
+    display: none;
+  }
+}
 /* line 1, ../../scalar/sass/core/minimal/_layout.scss */
 .page-holder {
   margin: 0 auto;

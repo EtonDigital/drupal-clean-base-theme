@@ -14,7 +14,7 @@
 
       $('#toolbar', context).once('dru-res', function(){
         $(this).drupalToolbar({
-          insertBefore: '.region-header'
+          insertBefore: '#secondary-menu'
         });
       });
 
@@ -79,9 +79,9 @@
     };
 
     this.addButton = function() {
-      $( settings.insertBefore ).after('<a class="drupal-toolber-ex nav-mobile" href="javascript:;"><i class="fa fa-cogs"></i></a>');
+      $( settings.insertBefore ).after('<a class="drupal-toolber-ex nav-mobile" href="javascript:;">'+ settings.menuButton +'</a>');
       button = $(settings.insertBefore).parent().find('.drupal-toolber-ex');
-      close = $('<a class="cloase-toolbar" href="javascript:;"><i class="fa fa-times"></i></a>').appendTo(element);
+      close = $('<a class="cloase-toolbar" href="javascript:;">' + settings.closeButton + '</i></a>').appendTo(element);
     };
 
     this.init( options );
@@ -90,7 +90,9 @@
   $.drupalToolbar.defaultOptions = {
     target: false,
     insertBefore: false,
-    toolbarBreak: 1190
+    toolbarBreak: 1190,
+    closeButton: '<i class="fa fa-times"></i>',
+    menuButton: '<i class="fa fa-cogs"></i>'
   };
 
   $.fn.drupalToolbar = function(options) {
