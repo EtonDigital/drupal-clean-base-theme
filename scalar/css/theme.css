@@ -133,9 +133,10 @@ html.no-js body:before {
 html {
   height: 100%;
   min-width: 320px;
+  -webkit-text-size-adjust: 100%;
 }
 
-/* line 20, ../sass/core/api_reset/_layout_res.scss */
+/* line 21, ../sass/core/api_reset/_layout_res.scss */
 body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -144,7 +145,7 @@ body {
   margin: 0;
   overflow-y: auto;
 }
-/* line 28, ../sass/core/api_reset/_layout_res.scss */
+/* line 29, ../sass/core/api_reset/_layout_res.scss */
 body.col-static .container {
   min-width: 1200px !important;
 }
