@@ -11,3 +11,9 @@ code {
 .valign {
   @extend %verticalcenter;
 }
+
+
+// hide class for hidding element
+.hide {
+  display: none;
+}
