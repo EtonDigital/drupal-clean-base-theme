@@ -409,6 +409,11 @@ code {
   display: block;
 }
 
+/* line 17, ../../scalar/sass/core/minimal/_layout.scss */
+.hide {
+  display: none;
+}
+
 /* line 1, ../../scalar/sass/core/minimal/_table.scss */
 table {
   width: 100%;
