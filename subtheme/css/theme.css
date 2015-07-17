@@ -317,14 +317,16 @@ h4 small,
   .cloase-toolbar,
   .nav-mobile.drupal-toolber-ex {
     display: block !important;
+    min-width: 20px;
+    min-height: 20px;
   }
 
-  /* line 23, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  /* line 25, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
   body {
     padding-top: 0 !important;
   }
 
-  /* line 27, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  /* line 29, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
   #toolbar {
     display: none;
     position: absolute;
@@ -334,52 +336,57 @@ h4 small,
     left: 0;
     min-width: 320px;
   }
-  /* line 36, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  /* line 38, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
   #toolbar .cloase-toolbar {
     position: absolute;
     top: -3px;
     right: 15px;
     font-size: 18px;
     padding: 5px;
+    min-width: 20px;
+    min-height: 20px;
   }
-  /* line 44, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  /* line 48, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
   #toolbar ul {
     display: block;
   }
-  /* line 49, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  /* line 53, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
   #toolbar #toolbar-home,
   #toolbar #toolbar-user {
     position: absolute;
     top: 10px;
   }
-  /* line 54, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  /* line 58, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
   #toolbar #toolbar-user {
     right: 10px;
   }
-  /* line 58, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  /* line 62, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
   #toolbar #toolbar-home {
     left: 10px;
   }
-  /* line 62, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  /* line 66, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
   #toolbar .toolbar-menu {
     padding: 10px !important;
   }
-  /* line 66, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  /* line 70, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
   #toolbar #toolbar-menu {
     float: none;
     margin-top: 30px;
     overflow: hidden;
   }
-  /* line 71, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  /* line 75, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
   #toolbar #toolbar-menu li {
     font-size: 14px;
     margin: 0;
     padding: 0;
+    float: none;
+    width: 50%;
   }
-  /* line 76, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  /* line 82, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
   #toolbar #toolbar-menu li a {
+    float: none;
+    display: block;
     padding: 10px 14px;
-    border-bottom: 1px solid #b7ddd1;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
@@ -387,13 +394,13 @@ h4 small,
     border-radius: 0;
   }
 
-  /* line 85, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  /* line 92, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
   #toolbar-drawer {
     display: block;
     visibility: visible;
   }
 
-  /* line 90, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
+  /* line 97, ../../scalar/sass/core/minimal/_admin_toolbar.scss */
   .toolbar-toggle-processed {
     display: none;
   }
@@ -409,7 +416,7 @@ code {
   display: block;
 }
 
-/* line 17, ../../scalar/sass/core/minimal/_layout.scss */
+/* line 16, ../../scalar/sass/core/minimal/_layout.scss */
 .hide {
   display: none;
 }

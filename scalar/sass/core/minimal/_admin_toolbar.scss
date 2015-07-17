@@ -18,6 +18,8 @@
   .cloase-toolbar,
   .nav-mobile.drupal-toolber-ex {
     display: block !important;
+    min-width: 20px;
+    min-height: 20px;
   }
 
   body {
@@ -39,6 +41,8 @@
       right: 15px;
       font-size: 18px;
       padding: 5px;
+      min-width: 20px;
+      min-height: 20px;
     }
 
     ul {
@@ -72,10 +76,13 @@
         font-size: 14px;
         margin: 0;
         padding: 0;
+        float: none;
+        width: 50%;
 
         a {
+          float: none;
+          display: block;
           padding: 10px 14px;
-          border-bottom: 1px solid #b7ddd1;
           @include border-radius( 0 );
         }
       }

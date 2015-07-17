@@ -91,8 +91,8 @@
     target: false,
     insertBefore: false,
     toolbarBreak: 1190,
-    closeButton: '<i class="fa fa-times"></i>',
-    menuButton: '<i class="fa fa-cogs"></i>'
+    closeButton: '<i class="fa fa-times"></i> close menu',
+    menuButton: '<i class="fa fa-cogs"></i>admin menu'
   };
 
   $.fn.drupalToolbar = function(options) {
